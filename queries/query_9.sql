@@ -1,0 +1,5 @@
+-- Вкажіть потрібний student_id замість 1
+SELECT DISTINCT s.name
+FROM subjects s
+JOIN grades g ON s.id = g.subject_id
+WHERE g.student_id = 1;
